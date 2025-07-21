@@ -11,15 +11,15 @@
         <form th:action="@{/tasks}" method="post">
             <div>
                 <label for="summaryInput">概要</label>
-                <input type="text" id="summaryInput">
+                <input type="text" id="summaryInput" name="summary">
             </div>
             <div>
                 <label for="descriptionInput">詳細</label>
-                <textarea id="descriptionInput"></textarea>
+                <textarea id="descriptionInput" name="description"></textarea>
             </div>
             <div>
                 <label for="statusInput">ステータス</label>
-                <select name="" id="statusInput">
+                <select id="statusInput" name="status">
                     <option value="TODO">Todo</option>
                     <option value="DOING">Doing</option>
                     <option value="DONE">Done</option>
