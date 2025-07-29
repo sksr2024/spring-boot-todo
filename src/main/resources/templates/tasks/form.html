@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}"><head>
-    <title>タスク作成</title>
+    <title th:text="${mode == 'CREATE'} ? 'タスク作成' : 'タスク編集'">タスク作成</title>
 </head>
 <body>
 <section layout:fragment="content">
