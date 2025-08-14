@@ -16,7 +16,7 @@ public class TaskController {
     private final TaskService taskService;
 
     @GetMapping
-    public String list(Model model) {
+    public String list(TaskSearchForm searchForm, Model model) {
         var taskList = taskService.find()
                 .stream()
                 .map(TaskDTO::toDTO)
