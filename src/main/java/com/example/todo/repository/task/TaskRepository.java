@@ -18,6 +18,13 @@ public interface TaskRepository {
             <if test='condition.summary != null and !condition.summary.isBlank()'> 
               summary LIKE CONCAT('%', #{condition.summary}, '%')
             </if>
+            <if test='condition.status != null and !condition.status.isEmpty()'>
+              AND status IN (
+                <foreach item='item' index='index' collection='condition.status' separator=','>
+                  #{item}
+                </foreach>
+              )
+            </if>
           </where>
         </script>
         """)

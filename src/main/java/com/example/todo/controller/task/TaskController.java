@@ -23,7 +23,7 @@ public class TaskController {
                 .toList();
 
         model.addAttribute("taskList", taskList);
-
+        model.addAttribute("searchDTO", searchForm.toDTO());
         return "tasks/list";
     }
 

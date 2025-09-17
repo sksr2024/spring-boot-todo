@@ -17,4 +17,8 @@ public record TaskSearchForm(
 
         return new TaskSearchEntity(summary(), statusEntityList);
     }
+
+    public TaskSearchDTO toDTO() {
+        return new TaskSearchDTO(summary(), status());
+    }
 }
