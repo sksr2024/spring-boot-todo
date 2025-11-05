@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 Spring Boot 3.1.2 TODO管理アプリケーション（日本語プロジェクト）
@@ -140,3 +136,19 @@ Spring DevToolsが有効（`developmentOnly`依存関係）
 ### Testing
 現在は基本的なコンテキストロードテストのみ（`TodoApplicationTests.java`）
 - 今後の拡張: Controller層の統合テスト、Service層の単体テスト推奨
+
+
+## REST API化動作確認
+
+### タスク一覧取得
+リクエストコマンド
+```
+```
+レスポンス
+```
+```
+
+### タスク詳細取得
+### タスク新規作成
+### タスク更新
+### タスク削除
